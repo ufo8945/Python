@@ -1,4 +1,3 @@
-#네이버 데이터랩 TOP20 끌어오기
 #https://engkimbs.tistory.com/896
 import time
 from selenium import webdriver
@@ -7,9 +6,10 @@ from selenium.webdriver.chrome.options import Options
 
 options = Options()
 options.headless = True
-driverPath = 'D:\DogFoot\IEDriverServer_Win32_3.150.1\IEDriverServer.exe'
-browser = webdriver.Ie(driverPath)
-#browser = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)
+#driverPath = 'D:\DogFoot\IEDriverServer_Win32_3.150.1\IEDriverServer.exe'
+driverPath = 'D:\DogFoot\chromedriver.exe'
+#browser = webdriver.Ie(driverPath)
+browser = webdriver.Chrome(executable_path=driverPath, options=options)
 browser.get("https://datalab.naver.com/shoppingInsight/sCategory.naver")
 
 time.sleep(3)
