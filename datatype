@@ -1,0 +1,133 @@
+Python을 좀 더 똑똑하게 이용하기 위해 기본 자료형을 알아두자.
+
+
+
+ㅁ Python 자료형 : https://wikidocs.net/14 (참고)
+
+자료형
+
+종류
+
+설명
+
+수치자료형
+
+int
+
+1,1024, 24
+
+float
+
+3.14,314e-2
+
+complex
+
+3+4j
+
+불자료형
+
+bool
+
+True, False
+
+군집자료형
+
+str
+
+“Hi”, “””Hello\n Hello”””
+
+list
+
+[1,2],[‘a’,1],[[1,2],’a’,True] (순서O, 중복O, 변경O)
+
+. 삽입(append),삭제(remove), 정렬(sort)
+
+tuple
+
+(1,2) (순서O,중복O, 변경X)
+
+set
+
+{1,2} (순서X, 중복X, 변경O)
+
+dict
+
+{1:10,2:20} (순서X, 중복X, 변경O)
+
+.{key : value}
+
+ 
+
+ㅁ List 의 특징 및 메소드
+
+- 리스트 안에는 어떠한 자료형도 포함시킬 수 있다.
+
+- 순서가 있어서 인덱싱과 슬라이싱이 가능하다. A[0], a[0:2]
+
+- a.append([5,6]) : 요소 추가
+
+- a.sort( ) : 요소 정렬
+
+- a.reverse( ) : 요소 뒤집기
+
+- a.index(3) : 해당 값의 인덱스(위치) 반환
+
+- a.insert(index, value) : 해당 위치에 value 삽입
+
+- a.remove(value) : 첫 번째로 나오는 value를 삭제하는 함수
+
+- a.pop( ) : 맨 마지막 요소를 돌려주고, 그 요소는 삭제
+
+- a.count(value) : 리스트 안에 value가 몇 개 있는지 반환
+
+- a.extend(list) : 리스트를 더해줌
+
+ 
+
+ㅁ Tuple의 특징
+
+- 튜플은 값을 바꿀 수 없다.
+
+ㅁ Set의 특징 및 메소드 or 관련 함수
+
+- 중복을 허용하지 않는다.
+
+- 순서가 없다.
+
+- s1 & s2 혹은 s1.intersection(s2) : 교집합
+
+- s1 | s2 혹은 s2.unio(s2) : 합집합
+
+- s1 – s2 혹은 s1.difference(s2) : 차집합
+
+- s1.add(value) : 추가
+
+- s1.update([4,5,6]) : 여러 개의 값을 한번에 추가
+
+- s1.remove(value) : 특정 값 제거
+
+ 
+
+ㅁ Dictionary의 특징 및 메소드
+
+- key를 통해 value를 찾는다.
+
+- key는 고유한 값이므로, 주의하자.
+
+- key에 리스트는 쓸 수 없다.
+
+- a[‘key’] : 해당 key 값의 value를 돌려줌
+
+- a[‘key’] = ‘value’ : key:value 를 딕셔너리에 추가한다.
+
+- a.keys( ) : key 리스트 만들기 è for k in a.keys( ) : 형태로 활용
+
+- a.values( ) : value 리스트 만들기
+
+- a.items( ) : key-value 쌍을 되돌려줌
+
+- a.clear( ) : 딕셔너리 안의 모든 요소 삭제
+
+- a.get(‘key’, ‘None’) : key로 value값 얻기 è 없는 key 요청 시 None을 돌려줌(default 값)
+
+- ‘key’ in a : 해당 key 가 딕셔너리 안에 있는지 조사 후 bool값 반환
